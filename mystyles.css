@@ -11,6 +11,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+
 }
 
 .bg-div{
@@ -26,6 +27,7 @@ body {
 nav {
     background-color: #474747;
     text-align: center;
+    padding: 10;
 
 }
 
@@ -44,7 +46,7 @@ nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 25px 25px;
     text-decoration: none;
 }
 
@@ -60,7 +62,8 @@ nav li a:hover {
 .heading-container h1, 
 .heading-container h2, 
 .heading-container h3 {
-    margin: 30px 100px;
+    margin: 30px 150px;
+    margin-left: 100px;
 }
 .styled-image {
     width: 100px; 
