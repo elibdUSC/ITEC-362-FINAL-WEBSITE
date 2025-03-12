@@ -3,20 +3,70 @@
 <head>
     <style>
         h1 {
-          font-size: 4em;
-          font-family: Arial, sans-serif;
-          font-weight: bold;
+            font-size: 4em;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
         }
-      </style>
-<link rel="stylesheet" href="mystyles.css" >
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQJFMH41W3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-MQJFMH41W3');
-</script>
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Space between elements */
+            margin-top: 20px;
+        }
+
+        .styled-image {
+            width: 100px; /* Set a uniform size */
+            height: 100px;
+            object-fit: cover; /* Ensure images keep proportions */
+        }
+
+        .action-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        .centered-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
+    <link rel="stylesheet" href="mystyles.css">
     <meta charset="UTF-8">
     <meta name="description" content="Free Fitness Tracker">
     <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -33,75 +83,80 @@
             <li><a href="Form.html">Sign Up</a></li>
         </ul>
     </nav>
-    <div class="logo-container">
-    <img src="https://image.freepik.com/free-vector/fitness-logo-template-design_1322-9.jpg" alt="logo" width="70" height="70">
-    </div>
-    <div class="heading-container">
-    <section>
-        <h1> Start Your Journey Now </h1>
-        <h2>We'll keep track of your progress while you focus on your body.</h2>
-            <p>We want you to reach your goals. Keeping track of your workouts
-                can be hard but we want to make it easier. With our help you can
-                make sure that you are staying on track and moving TOWARDS your
-                goal.
-            </p>
-    </section>
-    <p>
-        <div>
-        <img src="https://th.bing.com/th/id/R.90e91d23e6ca70344c65dd150c6fccd8?rik=TCoMtCPHjclnGg&riu=http%3a%2f%2fclipartmag.com%2fimages%2fpeople-running-clipart-35.jpg&ehk=oUGH23QuwD1WUVGyIVfBGuG4IWTegGd1TuTS0zYFmbU%3d&risl=&pid=ImgRaw&r=0.jpg" alt="running man" class="styled-image" width="60" height="35"><i class="arrow right"></i> <button class="action-button" onclick="redirectToPage()"> <script>
-            function redirectToPage() {
-                window.location.href = "https://elibdusc.github.io/ITEC-362-FINAL-WEBSITE/Form.html";
-            }
-        </script>START TODAY!</button> <i class="arrow left"></i><img src="https://th.bing.com/th/id/OIP.QNYZQhO9kzb-04Rb5Jy0jgHaHQ?w=199&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7.jpg" alt="running man" class="styled-image" width="60" height="35">
-        </div>
-    </p>
-</div>
-<hr class="section-divider">
 
-<div class="centered-section">
+    <div class="logo-container" style="text-align: center;">
+        <img src="https://image.freepik.com/free-vector/fitness-logo-template-design_1322-9.jpg" alt="logo" width="70" height="70">
+    </div>
+
+    <div class="text-container">
+        <h1>Start Your Journey Now</h1>
+        <h2>We'll keep track of your progress while you focus on your body.</h2>
+        <p>We want you to reach your goals. Keeping track of your workouts can be hard, but we want to make it easier. With our help, you can make sure that you are staying on track and moving TOWARDS your goal.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://th.bing.com/th/id/R.90e91d23e6ca70344c65dd150c6fccd8?rik=TCoMtCPHjclnGg&riu=http%3a%2f%2fclipartmag.com%2fimages%2fpeople-running-clipart-35.jpg" alt="running man" class="styled-image">
+        <button class="action-button" onclick="redirectToPage()">START TODAY!</button>
+        <img src="https://th.bing.com/th/id/OIP.QNYZQhO9kzb-04Rb5Jy0jgHaHQ?w=199&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7.jpg" alt="running man" class="styled-image">
+    </div>
+
+    <script>
+        function redirectToPage() {
+            window.location.href = "https://elibdusc.github.io/ITEC-362-FINAL-WEBSITE/Form.html";
+        }
+    </script>
+
+    <hr class="section-divider">
+
+    <div class="centered-section">
         <section>
             <h2>Track your progress</h2>
-            <p>Track everything about your workouts</p> <img src="https://i.kinja-img.com/gawker-media/image/upload/s---dAfcL9X--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/x9eonu22qskpppgpakkp.jpg" alt="girl tracking workout" width="400" height="300">
+            <p>Track everything about your workouts</p>
+            <img src="https://i.kinja-img.com/gawker-media/image/upload/s---dAfcL9X--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/x9eonu22qskpppgpakkp.jpg" alt="girl tracking workout" width="400" height="300">
         </section>
-</div>
-<div class="centered-section">
+    </div>
+
+    <div class="centered-section">
         <section>
             <h2>Set your goals</h2>
-            <p>Create multiple goals to work towards</p> <img src="https://thebridge.in/wp-content/uploads/2020/10/Fitness-goal.png" alt="woman achieving goal" width="400" height="300">
+            <p>Create multiple goals to work towards</p>
+            <img src="https://thebridge.in/wp-content/uploads/2020/10/Fitness-goal.png" alt="woman achieving goal" width="400" height="300">
         </section>
-</div>
-<div class="centered-section">
+    </div>
+
+    <div class="centered-section">
         <section>
             <h2>Get help</h2>
-            <p>We offer tons of help. From tutorial videos, to contacting locals trainers</p><img src="https://www.verywellfit.com/thmb/Y8qfCiEAvrABf_4k2BZQnUfsr_E=/2099x1428/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-621724466-58627da25f9b586e0237f00a.jpg" alt="trainer and lady" width="400" height="300">
+            <p>We offer tons of help. From tutorial videos to contacting local trainers</p>
+            <img src="https://www.verywellfit.com/thmb/Y8qfCiEAvrABf_4k2BZQnUfsr_E=/2099x1428/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-621724466-58627da25f9b586e0237f00a.jpg" alt="trainer and lady" width="400" height="300">
         </section>
-</div>
-<footer>
-    <div class="footer-section">
-        <h3>Resources</h3>
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-        </ul>
     </div>
-    <div class="footer-section">
-        <h3>Company</h3>
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="footer-section">
-        <h3>Socials</h3>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
-    </div>
-</footer>
 
+    <footer>
+        <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Socials</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
